@@ -1,0 +1,110 @@
+:root {
+    --cor-fundo: #fff;
+    --cor-texto: #222;
+    --cor-borda: #e0e0e0;
+    --cor-botao: #222;
+    --cor-botao-bg: #fff;
+    --cor-botao-hover: #f5f5f5;
+    --fonte: 'Segoe UI', Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte);
+}
+
+body {
+    background: var(--cor-fundo);
+    color: var(--cor-texto);
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    color: var(--cor-texto);
+    font-size: 1.1em;
+    height: 48px;
+    border-bottom: 1px solid var(--cor-borda);
+    padding: 0 16px;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+#menu #titulo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#menu h1 {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: var(--cor-texto);
+    padding: 0;
+    border-radius: 0;
+}
+
+#nome-arquivo {
+    font-size: 1em;
+    color: #888;
+    font-weight: normal;
+    padding: 0;
+}
+
+.menu-bts {
+    display: flex;
+    gap: 8px;
+}
+
+button {
+    background: var(--cor-botao-bg);
+    color: var(--cor-botao);
+    border: 1px solid var(--cor-borda);
+    padding: 6px 18px;
+    font-size: 1em;
+    border-radius: 0;
+    font-weight: 400;
+    box-shadow: none;
+    transition: background 0.15s;
+}
+
+button:hover, button:focus {
+    background: var(--cor-botao-hover);
+}
+
+#campo-editor {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    padding: 0 0 0 0;
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    resize: none;
+    font-family: var(--fonte);
+    font-size: 1em;
+    color: var(--cor-texto);
+    background: var(--cor-fundo);
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding: 16px;
+    line-height: 1.5em;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor - Nenhum arquivo aberto</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <main>
+        <div id="menu">
+            <div id="titulo">
+                <h1>Notes</h1>
+                <span id="nome-arquivo"></span>
+            </div>
+            <div class="menu-bts">
+                <button id="btn-abrir" onclick="carregar()">Carregar</button>
+                <button id="btn-salvar" onclick="salvar()">Salvar</button>
+            </div>
+        </div>
+        
+        <div id="campo-editor">
+            <textarea id="editor" autofocus wrap="soft" placeholder="Escreva suas anotações aqui..."></textarea>
+        </div>
+
+    </main>
+
+    <script src="scripts/renderer.js"></script>
+</body>
+</html>

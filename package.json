@@ -1,0 +1,45 @@
+{
+  "name": "notes",
+  "version": "1.0.0",
+  "description": "Aplicação para escrever notas.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.micaeljunco.notes",
+    "productName": "Notes",
+    "files": [
+      "**/*"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "icon.png",
+      "category": "Utility",
+      "maintainer": "Micael Jeferson Junco <micael@email.com>"
+    },
+    "win": {
+      "target": {
+        "target": "nsis",
+        "arch": [
+          "x64"
+        ]
+      },
+      "icon": "icon.ico"
+    }
+  },
+  "author": {
+    "name": "Micael Jeferson Junco",
+    "email": "micael@email.com"
+  },
+  "homepage": "https://github.com/f0xo/yourNotes",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^36.3.2",
+    "electron-builder": "^26.0.12"
+  }
+}
